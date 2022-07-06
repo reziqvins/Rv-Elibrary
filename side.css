@@ -1,0 +1,70 @@
+body {
+    font-family: "Poppins";
+    font-size: 16px;
+    background-color: rgb(255, 142, 142);
+  }
+  @media (max-width: 1200px) {
+    html{
+      font-size: 85%;
+    }
+    p{
+        font-size: 65%;
+    }
+  }
+  :root{
+      --offcanvas-width: 340px;
+      --topNavbarHeight: 56px;
+  }
+  
+  .sidebar-nav{
+      width: var(--offcanvas-width);
+  }
+  
+  @media (min-width: 992px) {
+      body{
+          overflow: auto !important;
+      }
+      .offcanvas-backdrop::before{
+          display: none;
+      }
+      .sidebar-nav{
+          transform: none;
+          visibility: visible !important;
+          top: var(--topNavbarHeight);
+          height: calc(100% - var(--topNavbarHeight));
+      }
+  }
+  
+  
+  .navbar-active{
+      background-color: rgb(255, 2, 2);
+      color: white;
+  }
+  
+  .navbar-passive:hover{
+      background-color: rgb(36, 17, 17);
+      color: white;
+  }
+  
+  @media (max-width: 1024px){
+      :root{
+        --offcanvas-width: 256px;
+        --topNavbarHeight: 56px;
+      }
+    }
+  
+   
+  .mycard{
+      background-color: rgb(240, 240, 240);
+      border-radius: 10px;
+  }
+  
+  .corner{
+      border-radius: 10px;
+  }
+  .line{
+     border: 1px solid;
+  }
+  
+  
+  
